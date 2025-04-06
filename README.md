@@ -21,23 +21,23 @@ Este projeto foi desenvolvido durante o **curso de Desenvolvimento Full-Stack em
 
 ## Como executar
 
-1 - Clone o repositório:
+Clone o repositório:
 
 ```bash
 git clone https://github.com/Bruno-Alvez/imdb_scraping.git
 cd imdb_scraping
 
-2 - Crie e ative um ambiente virtual:
+1 - Crie e ative um ambiente virtual:
 
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 
-3 - Instale as dependências:
+2 - Instale as dependências:
 
 pip install -r requirements.txt
 
-Execute o script:
+3 - Execute o script:
 
 python imdb_scraping.py
 
