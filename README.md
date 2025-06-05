@@ -1,67 +1,71 @@
-# IMDb Scraping
+# 🎬 IMDb Scraping – Python Web Scraper
 
-Script em Python para coletar os 100 filmes mais populares do [IMDb](https://www.imdb.com/chart/moviemeter/) e salvar as informações em um arquivo CSV.
+A Python script that collects the top 100 most popular movies from the [IMDb](https://www.imdb.com/chart/moviemeter/) chart and stores the data in a CSV file.
 
-Este projeto foi desenvolvido durante o **curso de Desenvolvimento Full-Stack em Python** da [EBAC](https://ebaconline.com.br/), como parte do módulo de **Python Avançado**. O foco foi a prática de web scraping com ênfase em **concorrência com threads**.
+This project was developed as part of the **Full-Stack Python course** at [EBAC](https://ebaconline.com.br/), specifically during the **Advanced Python** module. The goal was to practice web scraping and concurrency using threads.
 
-## Funcionalidades
+## 🚀 Features
 
-- Coleta título, ano de lançamento, nota e sinopse de cada filme.
-- Acessa cada página de filme individualmente.
-- Usa `ThreadPoolExecutor` para paralelizar as requisições e acelerar o processo.
-- Salva os dados estruturados em `movies.csv`.
+- Extracts title, release year, rating, and synopsis for each movie.
+- Accesses individual movie pages to retrieve complete data.
+- Uses `ThreadPoolExecutor` to parallelize HTTP requests and speed up scraping.
+- Saves the structured data into a `movies.csv` file.
 
-## Tecnologias
+## 🛠️ Technologies Used
 
 - Python 3.12
-- requests
-- BeautifulSoup (bs4)
-- concurrent.futures
-- csv (módulo padrão)
+- `requests`
+- `BeautifulSoup (bs4)`
+- `concurrent.futures`
+- Python's built-in `csv` module
 
-## Como executar
+## 🧪 How to Run
 
-1 - Clone o repositório:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/Bruno-Alvez/imdb_scraping.git
 cd imdb_scraping
 
-2 - Crie e ative um ambiente virtual:
+2.Create and activate a virtual environment:
 
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 
-3 - Instale as dependências:
+3.Install the dependencies:
 
 pip install -r requirements.txt
 
-Execute o script:
+4.Run the script:
 
 python imdb_scraping.py
 
-O arquivo movies.csv será gerado no diretório raiz do projeto.
+A movies.csv file will be generated in the project root.
 
-Exemplo de saída:
+📊 Sample Output
 
-Título	Lançamento	Nota	Sinopse
-Oppenheimer	2023	8.6	A dramatization of the story...
-Duna: Parte 2	2024	8.4	Paul Atreides unites with...
-Notas
+Title         | Year | Rating | Synopsis
+----------------------------------------
+Oppenheimer   | 2023 | 8.6    | A dramatization of the story...
+Dune: Part Two| 2024 | 8.4    | Paul Atreides unites with...
 
-    O IMDb pode alterar sua estrutura HTML, o que pode quebrar o scraper.
+⚠️ Notes
 
-    Delays são adicionados entre as requisições para evitar bloqueio.
+- IMDb’s HTML structure may change and break the scraper.
 
-    Recomendado rodar com moderação para não sobrecarregar o servidor.
+- Delays are added between requests to avoid IP blocking.
 
-Melhorias futuras
+- Use responsibly to avoid overloading the server.
 
-    Tratamento de erros mais robusto
+📌 Future Improvements
 
-    Logs detalhados
+- Better error handling
 
-    Exportação para outros formatos (JSON, Excel)
+-  Logging system
 
-    Visualização dos dados
+- Export to JSON and Excel
+
+- Basic data visualization
+
+
